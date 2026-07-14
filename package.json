@@ -15,7 +15,9 @@
     "test:cart": "cypress run --spec \"cypress/e2e/features/add_to_cart.feature\"",
     "test:checkout": "cypress run --spec \"cypress/e2e/features/checkout.feature\"",
     "test:trello": "cypress run --spec \"cypress/e2e/features/api_Trello.feature\"",
-    "report": "node scripts/generate-report.mjs"
+    "report": "npm run test && node scripts/generate-report.mjs",
+    "evidence:api": "node scripts/capture-api-evidencias.mjs",
+    "xray:upload": "node scripts/upload-xray.mjs"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "24.0.1",
@@ -25,7 +27,15 @@
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
       "cypress/e2e/step_definitions/**/*.{js,mjs,ts,tsx}"
-    ]
+    ],
+    "json": {
+      "enabled": true,
+      "output": "cypress/evidencias/cucumber-report.json"
+    },
+    "html": {
+      "enabled": true,
+      "output": "cypress/evidencias/cucumber-report.html"
+    }
   },
   "engines": {
     "node": ">=20"

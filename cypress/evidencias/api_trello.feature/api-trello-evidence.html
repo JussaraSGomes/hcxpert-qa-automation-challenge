@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}}</title>
+    <title>Evidência de API — GET Trello</title>
 
     <style>
         body {
@@ -64,27 +64,36 @@
 
 <body>
     <main class="container">
-        <h1>{{TITLE}}</h1>
+        <h1>Evidência de API — GET Trello</h1>
 
-        <span class="status">{{STATUS}}</span>
+        <span class="status">APROVADO</span>
 
         <section class="field">
             <span class="label">Feature</span>
-            <span>{{FEATURE}}</span>
+            <span>Consulta de ação do Trello pela API</span>
         </section>
 
         <section class="field">
             <span class="label">Cenários executados</span>
-            <span>{{SCENARIO_COUNT}}</span>
+            <span>2</span>
         </section>
 
         <section class="field">
             <span class="label">Resultado</span>
-            <pre>{{RESULT}}</pre>
+            <pre>[
+  {
+    &quot;scenario&quot;: &quot;Consultar uma ação existente&quot;,
+    &quot;status&quot;: &quot;PASSED&quot;
+  },
+  {
+    &quot;scenario&quot;: &quot;Consultar uma ação inexistente&quot;,
+    &quot;status&quot;: &quot;PASSED&quot;
+  }
+]</pre>
         </section>
 
         <footer>
-            Evidência gerada automaticamente em {{GENERATED_AT}}.
+            Evidência gerada automaticamente em 14/07/2026, 16:28:27.
         </footer>
     </main>
 </body>
