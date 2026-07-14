@@ -1,15 +1,18 @@
 # language: pt
+
 Funcionalidade: Adicionar produto ao carrinho
   Como cliente da plataforma
   Quero adicionar um produto ao carrinho
-  Para comprá-lo posteriormente
+  Para revisar os dados antes de realizar a compra
 
   Cenário: Adicionar produto ao carrinho a partir da listagem
-    Dado que estou visualizando a listagem de produtos
-    Quando adiciono um produto ao carrinho
-    Então o carrinho deve apresentar nome, preço e quantidade corretos
+    Dado que acesso a listagem de produtos
+    Quando adiciono um produto disponível ao carrinho
+    E acesso o carrinho pela confirmação de inclusão
+    Então o produto selecionado deve ser apresentado no carrinho
+    E o nome, o preço e a quantidade devem estar corretos
 
-  Cenário: Validar persistência do produto no carrinho
-    Dado que adicionei um produto ao carrinho
-    Quando acesso a página do carrinho
-    Então os dados do produto devem permanecer disponíveis
+  Cenário: Acessar o carrinho sem adicionar produtos
+    Dado que nenhum produto foi adicionado ao carrinho
+    Quando acesso diretamente a página do carrinho
+    Então o carrinho não deve apresentar produtos
