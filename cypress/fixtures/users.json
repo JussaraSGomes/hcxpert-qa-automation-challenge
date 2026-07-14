@@ -16,5 +16,8 @@
     "state": "Ontario",
     "city": "Toronto",
     "mobileNumber": "11999999999"
+  },
+  "invalidUser": {
+    "password": "SenhaInvalida@2026"
   }
 }

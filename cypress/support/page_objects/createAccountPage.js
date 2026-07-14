@@ -119,6 +119,10 @@ class CreateAccountPage {
             .to.be.a('string')
             .and.contain('Email already exists');
     }
+
+    getCreatedUser() {
+        return this.createdUser;
+    }
 }
 
 export default new CreateAccountPage();
