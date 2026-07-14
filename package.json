@@ -11,6 +11,7 @@
     "test:login": "cypress run --spec \"cypress/e2e/features/login.feature\"",
     "test:api": "cypress run --spec 'cypress/e2e/features/api_trello.feature'",
     "test:create-account": "cypress run --spec \"cypress/e2e/features/api_create_account.feature\"",
+    "test:search": "cypress run --spec \"cypress/e2e/features/search.feature\"",
     "report": "node scripts/generate-report.mjs"
   },
   "devDependencies": {

@@ -19,5 +19,9 @@
   },
   "invalidUser": {
     "password": "SenhaInvalida@2026"
+  },
+  "products": {
+    "existingProduct": "Blue Top",
+    "nonexistentProduct": "Produto Inexistente HCX 999"
   }
 }
