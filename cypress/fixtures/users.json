@@ -31,5 +31,9 @@
     "expiryMonth": "12",
     "expiryYear": "2030",
     "orderComment": "Pedido automatizado para validação do desafio HCXpert."
+  },
+  "trello": {
+    "validActionId": "592f11060f95a3d3d46a987a",
+    "invalidActionId": "000000000000000000000000"
   }
 }

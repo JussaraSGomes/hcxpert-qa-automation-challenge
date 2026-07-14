@@ -1,15 +1,16 @@
 # language: pt
-Funcionalidade: Validação de serviços REST
-  Como profissional de qualidade
-  Quero validar os serviços definidos no desafio
-  Para garantir o contrato e as regras de negócio das APIs
 
-  Cenário: Consultar ação existente no Trello
-    Quando envio uma requisição GET para a ação definida do Trello
-    Então o serviço deve retornar o status code esperado
-    E devo registrar o campo name contido na estrutura list
+Funcionalidade: Consulta de ação do Trello pela API
+  Como responsável pela qualidade da integração
+  Quero consultar ações do Trello
+  Para validar o retorno e os dados da lista associada
 
-  Cenário: Impedir criação de conta sem parâmetros obrigatórios
-    Quando envio uma requisição POST de criação de conta sem parâmetros obrigatórios
-    Então o serviço deve retornar o status code esperado
-    E deve informar a regra de negócio violada no corpo da resposta
+  Cenário: Consultar uma ação existente
+    Quando envio uma requisição para consultar uma ação válida do Trello
+    Então a API do Trello deve retornar o status code 200
+    E o nome da lista deve ser extraído e exibido na execução
+
+  Cenário: Consultar uma ação inexistente
+    Quando envio uma requisição para consultar uma ação inexistente do Trello
+    Então a API do Trello deve rejeitar a consulta
+    E não deve retornar os dados de uma ação válida
