@@ -1,4 +1,8 @@
-import { existsSync, readFileSync } from 'node:fs';
+import {
+    existsSync,
+    readFileSync,
+} from 'node:fs';
+
 import { resolve } from 'node:path';
 
 const projectRoot = resolve(import.meta.dirname, '..');
@@ -30,7 +34,7 @@ if (missingVariables.length > 0) {
     );
 
     console.error(
-        'Configure as variáveis antes de executar o upload.',
+        'Configure as variáveis de ambiente antes de executar o upload.',
     );
 
     process.exit(1);
@@ -41,9 +45,7 @@ if (!existsSync(reportPath)) {
         `Relatório Cucumber não encontrado: ${reportPath}`,
     );
 
-    console.error(
-        'Execute primeiro: npm run report',
-    );
+    console.error('Execute primeiro: npm run report');
 
     process.exit(1);
 }

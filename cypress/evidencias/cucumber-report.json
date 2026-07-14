@@ -1,566 +1,5 @@
 [
   {
-    "description": "  Como cliente da plataforma\n  Quero adicionar um produto ao carrinho\n  Para revisar os dados antes de realizar a compra",
-    "elements": [
-      {
-        "description": "",
-        "id": "adicionar-produto-ao-carrinho;adicionar-produto-ao-carrinho-a-partir-da-listagem",
-        "keyword": "Cenário",
-        "line": 8,
-        "name": "Adicionar produto ao carrinho a partir da listagem",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 9,
-            "name": "que acesso a listagem de produtos",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3618000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 10,
-            "name": "adiciono um produto disponível ao carrinho",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 359000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 11,
-            "name": "acesso o carrinho pela confirmação de inclusão",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 734000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 12,
-            "name": "o produto selecionado deve ser apresentado no carrinho",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 26000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 13,
-            "name": "o nome, o preço e a quantidade devem estar corretos",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 26000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "adicionar-produto-ao-carrinho;acessar-o-carrinho-sem-adicionar-produtos",
-        "keyword": "Cenário",
-        "line": 15,
-        "name": "Acessar o carrinho sem adicionar produtos",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 16,
-            "name": "que nenhum produto foi adicionado ao carrinho",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 17,
-            "name": "acesso diretamente a página do carrinho",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 802000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 18,
-            "name": "o carrinho não deve apresentar produtos",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "adicionar-produto-ao-carrinho",
-    "line": 3,
-    "keyword": "Funcionalidade",
-    "name": "Adicionar produto ao carrinho",
-    "tags": [],
-    "uri": "cypress\\e2e\\features\\add_to_cart.feature"
-  },
-  {
-    "description": "  Como responsável pela qualidade da integração\n  Quero consultar ações do Trello\n  Para validar o retorno e os dados da lista associada",
-    "elements": [
-      {
-        "description": "",
-        "id": "consulta-de-ação-do-trello-pela-api;consultar-uma-ação-existente",
-        "keyword": "Cenário",
-        "line": 8,
-        "name": "Consultar uma ação existente",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 9,
-            "name": "envio uma requisição para consultar uma ação válida do Trello",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 348000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 10,
-            "name": "a API do Trello deve retornar o status code 200",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 11,
-            "name": "o nome da lista deve ser extraído e exibido na execução",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "consulta-de-ação-do-trello-pela-api;consultar-uma-ação-inexistente",
-        "keyword": "Cenário",
-        "line": 13,
-        "name": "Consultar uma ação inexistente",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 14,
-            "name": "envio uma requisição para consultar uma ação inexistente do Trello",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 186000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 15,
-            "name": "a API do Trello deve rejeitar a consulta",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 16,
-            "name": "não deve retornar os dados de uma ação válida",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "consulta-de-ação-do-trello-pela-api",
-    "line": 3,
-    "keyword": "Funcionalidade",
-    "name": "Consulta de ação do Trello pela API",
-    "tags": [],
-    "uri": "cypress\\e2e\\features\\api_Trello.feature"
-  },
-  {
-    "description": "  Como responsável pela qualidade da plataforma\n  Quero criar usuários por meio da API\n  Para disponibilizar uma massa válida para os testes automatizados",
-    "elements": [
-      {
-        "description": "",
-        "id": "criação-de-conta-de-usuário-pela-api;criar-uma-conta-com-dados-válidos",
-        "keyword": "Cenário",
-        "line": 8,
-        "name": "Criar uma conta com dados válidos",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 9,
-            "name": "envio uma requisição para criar uma conta com dados válidos",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 769000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 10,
-            "name": "a API deve processar a requisição com sucesso",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 11,
-            "name": "o código de negócio retornado deve ser 201",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 12,
-            "name": "a mensagem deve informar que o usuário foi criado",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "criação-de-conta-de-usuário-pela-api;não-criar-uma-conta-com-e-mail-já-cadastrado",
-        "keyword": "Cenário",
-        "line": 14,
-        "name": "Não criar uma conta com e-mail já cadastrado",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 15,
-            "name": "que existe uma conta previamente cadastrada",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 257000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 16,
-            "name": "envio uma nova requisição com o mesmo e-mail",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 257000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 17,
-            "name": "a API deve rejeitar a criação da conta duplicada",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 18,
-            "name": "deve informar que o e-mail já está cadastrado",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "criação-de-conta-de-usuário-pela-api",
-    "line": 3,
-    "keyword": "Funcionalidade",
-    "name": "Criação de conta de usuário pela API",
-    "tags": [],
-    "uri": "cypress\\e2e\\features\\api_create_account.feature"
-  },
-  {
-    "description": "  Como cliente autenticado da plataforma\n  Quero finalizar a compra dos produtos adicionados ao carrinho\n  Para concluir meu pedido com segurança",
-    "elements": [
-      {
-        "description": "",
-        "id": "finalização-de-compra;finalizar-uma-compra-preenchendo-os-dados-obrigatórios",
-        "keyword": "Cenário",
-        "line": 8,
-        "name": "Finalizar uma compra preenchendo os dados obrigatórios",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 9,
-            "name": "que possuo uma conta autenticada com um produto no carrinho",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9951000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 10,
-            "name": "acesso a etapa de checkout",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1172000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 11,
-            "name": "confirmo o endereço e os dados do pedido",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1808000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 12,
-            "name": "informo os dados válidos de pagamento",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1634000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 13,
-            "name": "confirmo a compra",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2354000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 14,
-            "name": "o pedido deve ser finalizado com sucesso",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 322000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "finalização-de-compra;não-finalizar-uma-compra-sem-preencher-os-dados-obrigatórios-do-cartão",
-        "keyword": "Cenário",
-        "line": 16,
-        "name": "Não finalizar uma compra sem preencher os dados obrigatórios do cartão",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 17,
-            "name": "que possuo uma conta autenticada com um produto no carrinho",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8232000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 18,
-            "name": "acesso a etapa de checkout",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 767000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 19,
-            "name": "confirmo o endereço e os dados do pedido",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1815000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 20,
-            "name": "tento confirmar a compra sem preencher os dados do cartão",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 108000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 21,
-            "name": "os campos obrigatórios do pagamento devem impedir a finalização",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 39000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "finalização-de-compra",
-    "line": 3,
-    "keyword": "Funcionalidade",
-    "name": "Finalização de compra",
-    "tags": [],
-    "uri": "cypress\\e2e\\features\\checkout.feature"
-  },
-  {
     "description": "  Como usuário cadastrado na plataforma\n  Quero realizar login com minhas credenciais\n  Para acessar as funcionalidades disponíveis para usuários autenticados",
     "elements": [
       {
@@ -580,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 261000000
+              "duration": 964000000
             }
           },
           {
@@ -593,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1318000000
+              "duration": 3129000000
             }
           },
           {
@@ -606,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1060000000
+              "duration": 1528000000
             }
           },
           {
@@ -619,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4090000000
+              "duration": 4547000000
             }
           },
           {
@@ -645,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 28000000
             }
           }
         ],
@@ -682,7 +121,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1247000000
+              "duration": 325000000
             }
           },
           {
@@ -695,7 +134,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1135000000
+              "duration": 1123000000
             }
           },
           {
@@ -708,7 +147,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1134000000
+              "duration": 371000000
             }
           },
           {
@@ -721,7 +160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 42000000
             }
           },
           {
@@ -734,7 +173,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 20000000
             }
           }
         ],
@@ -758,7 +197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1535000000
+              "duration": 344000000
             }
           },
           {
@@ -771,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 427000000
+              "duration": 416000000
             }
           },
           {
@@ -784,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 92000000
             }
           },
           {
@@ -797,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 16000000
             }
           }
         ],
@@ -811,142 +250,5 @@
     "name": "Login de usuário",
     "tags": [],
     "uri": "cypress\\e2e\\features\\login.feature"
-  },
-  {
-    "description": "  Como cliente da plataforma\n  Quero pesquisar produtos\n  Para localizar os itens que desejo comprar",
-    "elements": [
-      {
-        "description": "",
-        "id": "pesquisa-de-produtos;pesquisar-um-produto-existente",
-        "keyword": "Cenário",
-        "line": 8,
-        "name": "Pesquisar um produto existente",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 9,
-            "name": "que acesso a listagem de produtos",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2419000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 10,
-            "name": "pesquiso por um produto existente",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1134000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 11,
-            "name": "deve ser exibida a seção de produtos pesquisados",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 17000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 12,
-            "name": "os resultados devem estar relacionados ao termo informado",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 26000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "pesquisa-de-produtos;pesquisar-um-produto-inexistente",
-        "keyword": "Cenário",
-        "line": 14,
-        "name": "Pesquisar um produto inexistente",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 15,
-            "name": "que acesso a listagem de produtos",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1721000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Quando ",
-            "line": 16,
-            "name": "pesquiso por um produto inexistente",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2298000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 17,
-            "name": "deve ser exibida a seção de produtos pesquisados",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 18,
-            "name": "nenhum produto deve ser apresentado no resultado",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "pesquisa-de-produtos",
-    "line": 3,
-    "keyword": "Funcionalidade",
-    "name": "Pesquisa de produtos",
-    "tags": [],
-    "uri": "cypress\\e2e\\features\\search.feature"
   }
 ]
