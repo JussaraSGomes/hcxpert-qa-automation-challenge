@@ -1,11 +1,20 @@
 {
   "validUser": {
-    "name": "QA HCXpert",
-    "email": "substituir-por-email-valido@example.com",
-    "password": "SubstituirSenha123!"
-  },
-  "invalidUser": {
-    "email": "usuario.inexistente@example.com",
-    "password": "senha-incorreta"
+    "name": "Jussara QA",
+    "password": "Hcxpert@2026",
+    "title": "Mrs",
+    "birthDate": "9",
+    "birthMonth": "3",
+    "birthYear": "1992",
+    "firstName": "Jussara",
+    "lastName": "Gomes",
+    "company": "HCXpert Challenge",
+    "address1": "Rua de Teste, 100",
+    "address2": "Casa",
+    "country": "Canada",
+    "zipcode": "01001000",
+    "state": "Ontario",
+    "city": "Toronto",
+    "mobileNumber": "11999999999"
   }
 }
