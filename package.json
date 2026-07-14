@@ -1,0 +1,22 @@
+{
+  "name": "desafio-hcxpert-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desafio técnico de automação Web e API com Cypress, Cucumber e Page Object Model.",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run",
+    "test:chrome": "cypress run --browser chrome",
+    "test:api": "cypress run --spec 'cypress/e2e/features/api_trello.feature'",
+    "report": "node scripts/generate-report.mjs"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.8",
+    "cypress": "15.18.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

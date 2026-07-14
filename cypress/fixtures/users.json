@@ -1,0 +1,11 @@
+{
+  "validUser": {
+    "name": "QA HCXpert",
+    "email": "substituir-por-email-valido@example.com",
+    "password": "SubstituirSenha123!"
+  },
+  "invalidUser": {
+    "email": "usuario.inexistente@example.com",
+    "password": "senha-incorreta"
+  }
+}
