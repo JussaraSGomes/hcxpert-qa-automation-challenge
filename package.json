@@ -1,5 +1,5 @@
 {
-  "name": "desafio-hcxpert-qa",
+  "name": "hcxpert-qa-automation-challenge",
   "version": "1.0.0",
   "private": true,
   "description": "Desafio técnico de automação Web e API com Cypress, Cucumber e Page Object Model.",
@@ -8,6 +8,7 @@
     "cy:run": "cypress run",
     "test": "cypress run",
     "test:chrome": "cypress run --browser chrome",
+    "test:login": "cypress run --spec \"cypress/e2e/features/login.feature\"",
     "test:api": "cypress run --spec 'cypress/e2e/features/api_trello.feature'",
     "report": "node scripts/generate-report.mjs"
   },

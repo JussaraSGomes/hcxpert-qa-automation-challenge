@@ -1,7 +1,8 @@
 node_modules/
-cypress/downloads/
 cypress/videos/
+cypress/downloads/
 .env
-reports/
 .DS_Store
+.idea/
+.vscode/
 npm-debug.log*

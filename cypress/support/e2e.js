@@ -1,2 +1,7 @@
-// Arquivo global de suporte do Cypress.
-// Os comandos customizados serão adicionados conforme os fluxos forem implementados.
+import './commands';
+
+Cypress.on('uncaught:exception', (error) => {
+  console.warn('Exceção não controlada pela aplicação:', error.message);
+
+  return false;
+});

@@ -25,6 +25,7 @@ module.exports = defineConfig({
   screenshotsFolder: 'cypress/evidencias',
   video: false,
   defaultCommandTimeout: 10000,
+  pageLoadTimeout: 30000,
   requestTimeout: 15000,
   responseTimeout: 15000,
   retries: {
