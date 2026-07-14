@@ -1,13 +1,13 @@
 class ProductsPage {
     elements = {
-    allProductsTitle: () => cy.contains('h2', 'All Products'),
-    searchInput: () => cy.get('#search_product'),
-    searchButton: () => cy.get('#submit_search'),
-    searchedProductsTitle: () => cy.contains('h2', 'Searched Products'),
-    productCards: () => cy.get('.features_items .product-image-wrapper'),
-    productNames: () => cy.get('.features_items .productinfo p'),
-    cartModal: () => cy.get('#cartModal'),
-    viewCartButton: () => cy.contains('#cartModal a', 'View Cart'),
+        allProductsTitle: () => cy.contains('h2', 'All Products'),
+        searchInput: () => cy.get('#search_product'),
+        searchButton: () => cy.get('#submit_search'),
+        searchedProductsTitle: () => cy.contains('h2', 'Searched Products'),
+        productCards: () => cy.get('.features_items .product-image-wrapper'),
+        productNames: () => cy.get('.features_items .productinfo p'),
+        cartModal: () => cy.get('#cartModal'),
+        viewCartButton: () => cy.contains('#cartModal a', 'View Cart'),
     };
 
     visit() {
@@ -108,6 +108,17 @@ class ProductsPage {
 
     getSelectedProduct() {
         return this.selectedProduct;
+    }
+
+    addConfiguredProductAndOpenCart() {
+        this.openProductsPage();
+        this.addConfiguredProductToCart();
+        this.openCartFromConfirmation();
+    }
+
+    openProductsPage() {
+        this.visit();
+        this.validateProductsPage();
     }
 }
 

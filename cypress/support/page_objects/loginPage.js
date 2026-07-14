@@ -49,6 +49,13 @@ class LoginPage {
             expect($input[0].validationMessage).not.to.be.empty;
         });
     }
+
+    validateSuccessfulLogin() {
+        cy.url().should('eq', `${Cypress.config('baseUrl')}/`);
+
+        cy.contains('a', 'Logged in as')
+            .should('be.visible');
+    }
 }
 
 export default new LoginPage();

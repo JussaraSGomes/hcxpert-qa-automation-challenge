@@ -13,6 +13,7 @@
     "test:create-account": "cypress run --spec \"cypress/e2e/features/api_create_account.feature\"",
     "test:search": "cypress run --spec \"cypress/e2e/features/search.feature\"",
     "test:cart": "cypress run --spec \"cypress/e2e/features/add_to_cart.feature\"",
+    "test:checkout": "cypress run --spec \"cypress/e2e/features/checkout.feature\"",
     "report": "node scripts/generate-report.mjs"
   },
   "devDependencies": {

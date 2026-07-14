@@ -7,6 +7,7 @@ class CartPage {
         productName: () => cy.get('.cart_description h4 a'),
         productPrice: () => cy.get('.cart_price p'),
         productQuantity: () => cy.get('.cart_quantity button'),
+        proceedToCheckoutButton: () => cy.contains('a', 'Proceed To Checkout'),
     };
 
     visit() {
@@ -74,6 +75,15 @@ class CartPage {
         cy.get('body')
             .find('#cart_info_table tbody tr')
             .should('have.length', 0);
+    }
+
+    proceedToCheckout() {
+        this.elements
+            .proceedToCheckoutButton()
+            .should('be.visible')
+            .click();
+
+        cy.url().should('include', '/checkout');
     }
 }
 
